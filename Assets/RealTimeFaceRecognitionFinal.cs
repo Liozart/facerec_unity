@@ -769,14 +769,6 @@ namespace RealTimeFaceRecognitionExample
                 strBuilder.Append(m_numPersons);
                 strBuilder.Append(" people.");
             }
-            else if (m_mode == R_MODES.MODE_TRAINING)
-            {
-                strBuilder.Append("Please wait while your ");
-                strBuilder.Append(preprocessedFaces.Count / 2);
-                strBuilder.Append(" faces of ");
-                strBuilder.Append(m_numPersons);
-                strBuilder.Append(" people builds.");
-            }
             else if (m_mode == R_MODES.MODE_RECOGNITION)
                 strBuilder.Append("Click people on the right to add more faces to them, or [Add Person] for someone new.");
 
